@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+
+}
+html{
+    scroll-behavior: smooth;
+}
+main{
+    overflow: hidden;
+}
+.header{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: auto;
+}
+.headbtn{
+    padding: 10px;
+    margin-right: 30px;
+    font-size: 3vh;
+    background-color: black;
+    width: auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: background 0.5s;
+}
+.headbtn:hover{
+    background: green;
+}
+.headbtn a{
+    color: white;
+}
+#header-tabs{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/cow4.jpg);
+    background-size: cover;
+    background-position:center;
+    
+
+}
+.tabs{
+    padding: 10px 10%;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background:green;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+    margin: 120px;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 36px;
+    margin-top: 10px;
+}
+.container{
+    margin: 20px;
+}
+.container-btn{
+    display: block;
+    margin: 20px auto;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 14px 50px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+    font-size: 3vh;
+}
+.container-btn:hover{
+    background: green;
+}
+
+.header-text p{
+    font-size: 90px;
+    font-weight:bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: powderblue;
+    margin-top: 190px;
+}
+.header-text h1 span{
+    color: palegreen;
+    
+}
+.swiper-slide img{
+    width: 80%;
+    padding-left: 10%;
+    border-radius: 50%;
+    
+}
+.container-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-top: 7px; 
+}
+.list{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 14px;
+}
+.list img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width:100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), green);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer a{
+    display: block;
+    margin: 50px auto;
+    border-radius: 6px;
+    border: 1px solid white;
+    background-color: #080808;
+    width: fit-content;
+    padding: 14px 50px;
+    text-decoration: none;
+    color: white;
+    
+}
+.list:hover img{
+    transform: scale(1.1);
+}
+.list:hover .layer{
+    height: 100%;
+}
+/*products section*/
+.title{
+    font-size: 60px;
+    color: yellowgreen;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+#Products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: 40px; 
+}
+.project-card{
+    position: relative;
+    overflow: hidden;
+    padding: 14px;
+    width: 100%;
+    height: 400px;
+    border: 1px solid gray;
+    border-radius: 19px;
+    background-color:white;
+    padding-bottom: 30px;
+    box-shadow: 5px 10px 10px green;
+    margin-top: 18px;
+}
+.card-header{
+    width: 100%;
+    height: 250px;
+    border: 19px 19px 0px 0px;
+
+}
+.card-header img{
+    width: 100%;
+    height: 100%;
+    border-radius: 19px 19px 0px 0px;
+
+}
+
+
+.card-body{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top:3px;
+}
+.card-body h4{
+    color: green;
+    margin: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.card-body p{
+    color: #080808;
+    font-size: large;
+    font-weight: 300;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+
+}
+.card-footer a{
+    text-decoration: none;
+    margin: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 3vh;
+    font-weight: bolder;
+}
+.btn{
+    color: white;
+    background-color: black;
+    border-bottom: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 19px;
+}
+.btn:hover{
+    background-color: green;
+}
+/*About section*/
+.content{
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.content h1{
+    font-size: 60px;
+    color: greenyellow;
+    font-weight: 600;
+    padding-left: 70vh;
+    margin: 10px;
+}
+.content p{
+    font-size: 25px;
+    margin: 25px;
+}
+#contact{
+    margin: 0px 35px 0px 35px;
+   
+}
+.footer{
+    border: 1px solid;
+    width: 100%;
+    height:20rem;
+    background-color: gray;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 19px 19px 0px 0px ;
+   
+}
+.footer span{
+    
+    font-weight: bolder;
+}
+.footer-1{
+    margin: 30px;
+}
+.footer-1 span{
+    color: yellowgreen;
+    font-size: 30px;
+}
+.footer-1 p{
+    font-size: 20px;
+}
+.footer-2{
+    margin: 30px;
+}
+.footer-2 small{
+    color: greenyellow;
+    font-size: 20px;
+}
+nav .fas{
+    display: none;
+}
+/* code for small screen*/
+
+@media only screen and (max-width:600px){
+    #header-text{
+        background-image: url(/images/cow4.jpg);
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    .title{
+        font-size: 30px;
+        
+    }
+   
+    nav ul{
+        position: fixed;
+        background: black;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .content p{
+        font-size: 18px;
+    }
+    
+    .header-text p{
+        font-size: 50px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+}
+
