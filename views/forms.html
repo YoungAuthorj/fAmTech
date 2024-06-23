@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="../public/forms.css">
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h1>fAmTech</h1>
+        </div>
+        <br>
+        <section class="container">
+            <div id="h1">
+                <h1>Welcome</h1>
+            </div>
+            <br>
+            <label>
+                <input type="radio"  name="form-switch" value="form1" checked>
+                Already a customer? Sign in
+            </label><br>
+            <label>
+                <input type="radio" name="form-switch" value="form2">
+                New to fAmTech? Create account
+            </label>
+            <br>
+
+            <div id="form1" class="form-container">
+                <form>
+                    <h2>Sign in</h2>
+                    <label for="email">Email or phone number</label><br>
+                    <input type="email" class="input" id="email" name="userEmail"><br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" class="input" id="password" name="userPassword"><br><br>
+                    <a href="">Forgot password?</a><br>
+                    <input type="submit" class="input submit" value="Sign in">
+                </form>
+            </div>
+
+            <div id="form2" class="form-container">
+                <form>
+                    <h2>Create account</h2>
+                    <input type="text" class="input" placeholder="Name" id="name" name="name">
+                    
+                    <input type="email" class="input" placeholder="Email" id="email2" name="userEmail"><br>
+                    
+                    <input type="password" placeholder="Create a Password" class="input" id="password2" name="userPassword">
+                    
+                    <input type="text" placeholder="Phone number" class="input" id="phone" name="userPhone"><br>
+                    
+                    <input type="text" placeholder="Gender" class="input" id="gender" name="userGender">
+                    
+                    <input type="text" placeholder="Mailing/Shipping Address" class="input" id="address" name="userAddress"><br>
+                    
+                    <input type="text" placeholder="Permanent Home Address" class="input" id="address" name="userAddress1">
+                    <input type="text" placeholder="Product interest" class="input"><br>
+                    <input type="submit" class="input submit" value="Submit">
+                </form>
+            </div><br><br>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form1 = document.getElementById('form1');
+            const form2 = document.getElementById('form2');
+            const radios = document.getElementsByName('form-switch');
+
+            const showForm = () => {
+                if (radios[0].checked) {
+                    form1.style.display = 'block';
+                    form2.style.display = 'none';
+                } else {
+                    form1.style.display = 'none';
+                    form2.style.display = 'block';
+                }
+            };
+
+            // Set initial form display
+            showForm();
+
+            radios.forEach(radio => {
+                radio.addEventListener('change', showForm);
+            });
+        });
+    </script>
+</body>
+
+</html>
