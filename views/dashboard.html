@@ -4,237 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="public/dashboard.css">
+    <title>register</title>
+    <link rel="stylesheet" href="../public/forms.css">
 </head>
 
 <body>
-
     <main>
         <div class="header">
-            <div>
-                <h1>fAmTech</h1>
-            </div>
-           
-            <div>
-                <a href="">Profile</a>
-            </div>
+            <h1>fAmTech</h1>
         </div>
-        
-        <div class="sidenav">
-            <a href="#" data-content="home">Home</a>
-            <a href="#" data-content="Place">Place an Order</a>
-            <a href="#" data-content="Track">Track Order</a>
-            <a href="#" data-content="Review">Review Order</a>
-            <a href="#" data-content="Invest">Invest with us</a>
-        </div>
-
-        <div class="main">
-            <div id="home" class="content active">
-                <h2>Home</h2>
-               <div class="home-div">
-
-               </div>
+        <br>
+        <section class="container">
+            <div id="h1">
+                <h1>Welcome</h1>
             </div>
-            <div id="Place" class="content">
-                <h2>Place an Order</h2>
-                <h1 class="title">Our Availiable Products</h1><br>
-        <section id="Products">
+            <br>
+            <label>
+                <input type="radio"  name="form-switch" value="form1" checked>
+                Already a customer? Sign in
+            </label><br>
+            <label>
+                <input type="radio" name="form-switch" value="form2">
+                New to fAmTech? Create account
+            </label>
+            <br>
 
-            <div class="project-card">
-                <div class="card-header">
-                    <img src="images/turkey2.jpg" alt="card-image">
-                </div>
-                <div class="card-body">
-                    <h4>Turkey</h4>
-                    <p>
-                        High breed turkey at afordable price
-                    </p>
-                </div>
-                <hr>
-                <div class="card-footer">
-                    <a href="forms.html" target="_blank" class="btn">Place an Order</a>
-                </div>
+            <div id="form1" class="form-container">
+                <form>
+                    <h2>Sign in</h2>
+                    <label for="email">Email or phone number</label><br>
+                    <input type="email" class="input" id="email" name="userEmail"><br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" class="input" id="password" name="userPassword"><br><br>
+                    <a href="">Forgot password?</a><br>
+                    <input type="submit" class="input submit" value="Sign in">
+                </form>
             </div>
-            <div class="project-card">
-                <div class="card-header">
-                    <img src="images/chicken2.jpg" alt="card-image">
-                </div>
-                <div class="card-body">
-                    <h4>Chicken</h4>
-                    <p>
-                        All types of breeds are availiable
-                    </p>
-                </div>
-                <hr>
-                <div class="card-footer">
-                    <a href="forms.html" target="_blank" class="btn">Place an Order</a>
-                </div>
 
-            </div>
-            <div class="project-card">
-                <div class="card-header">
-                    <img src="images/cow6.jpg" alt="card-image">
-                </div>
-                <div class="card-body">
-                    <h4>Cattles</h4>
-                    <p>
-                        High breed cattles at afordable price
-                    </p>
-                </div>
-                <hr>
-                <div class="card-footer">
-                    <a href="forms.html" target="_blank" class="btn">Place an Order</a>
-                </div>
-
-            </div>
+            <div id="form2" class="form-container">
+                <form>
+                    <h2>Create account</h2>
+                    <input type="text" class="input" placeholder="Name" id="name" name="name">
+                    
+                    <input type="email" class="input" placeholder="Email" id="email2" name="userEmail"><br>
+                    
+                    <input type="password" placeholder="Create a Password" class="input" id="password2" name="userPassword">
+                    
+                    <input type="text" placeholder="Phone number" class="input" id="phone" name="userPhone"><br>
+                    
+                    <input type="text" placeholder="Gender" class="input" id="gender" name="userGender">
+                    
+                    <input type="text" placeholder="Mailing/Shipping Address" class="input" id="address" name="userAddress"><br>
+                    
+                    <input type="text" placeholder="Permanent Home Address" class="input" id="address" name="userAddress1">
+                    <input type="text" placeholder="Product interest" class="input"><br>
+                    <input type="submit" class="input submit" value="Submit">
+                </form>
+            </div><br><br>
         </section>
-
-        <section id="Products">
-
-            <div class="project-card">
-                <div class="card-header">
-                    <img src="images/goat2.jpg" alt="card-image">
-                </div>
-                <div class="card-body">
-                    <h4>Goats</h4>
-                    <p>
-                        High breed Goats at afordable price
-                    </p>
-                </div>
-                <hr>
-                <div class="card-footer">
-                    <a href="forms.html" target="_blank" class="btn">Place an Order</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="card-header">
-                    <img src="images/pigs2.jpg" alt="card-image">
-                </div>
-                <div class="card-body">
-                    <h4>Pigs</h4>
-                    <p>
-                        All types of breeds are availiable
-                    </p>
-                </div>
-                <hr>
-                <div class="card-footer">
-                    <a href="forms.html" target="_blank" class="btn">Place an Order</a>
-                </div>
-
-            </div>
-            <div class="project-card">
-                <div class="card-header">
-                    <img src="images/eggs1.jpg" alt="card-image">
-                </div>
-                <div class="card-body">
-                    <h4>Eggs</h4>
-                    <p>
-                        High Quality eggs at afordable price
-                    </p>
-                </div>
-                <hr>
-                <div class="card-footer">
-                    <a href="forms.html" target="_blank" class="btn">Place an Order</a>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="Products">
-
-            <div class="project-card">
-                <div class="card-header">
-                    <img src="images/fish3.jpg" alt="card-image">
-                </div>
-                <div class="card-body">
-                    <h4>Fish</h4>
-                    <p>
-                        High breed fishes at afordable price
-                    </p>
-                </div>
-                <hr>
-                <div class="card-footer">
-                    <a href="forms.html" target="_blank" class="btn">Place an Order</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="card-header">
-                    <img src="images/ram.jpg" alt="card-image">
-                </div>
-                <div class="card-body">
-                    <h4>Sheep</h4>
-                    <p>
-                        All types of breeds are availiable
-                    </p>
-                </div>
-                <hr>
-                <div class="card-footer">
-                    <a href="forms.html" target="_blank" class="btn">Place an Order</a>
-                </div>
-
-            </div>
-            <div class="project-card">
-                <div class="card-header">
-                    <img src="images/milk.jpg" alt="card-image">
-                </div>
-                <div class="card-body">
-                    <h4>Milk</h4>
-                    <p>
-                        nutritious milk at afordable price
-                    </p>
-                </div>
-                <hr>
-                <div class="card-footer">
-                    <a href="forms.html" target="_blank" class="btn">Place an Order</a>
-                </div>
-
-            </div>
-
-        </section>
-            </div>
-            <div id="Track" class="content">
-                <h2>Track Order</h2>
-                <p></p>
-            </div>
-            <div id="Review" class="content">
-                <h2>Review Order</h2>
-                <p></p>
-            </div>
-            <div id="Invest" class="content">
-                <h2>Invest with us</h2>
-                <p></p>
-            </div>
-        </div>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const contents = document.querySelectorAll('.content');
-                const links = document.querySelectorAll('.sidenav a');
-
-                const showContent = (id) => {
-                    contents.forEach(content => {
-                        content.classList.remove('active');
-                        if (content.id === id) {
-                            content.classList.add('active');
-                        }
-                    });
-                };
-
-                links.forEach(link => {
-                    link.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        const contentId = event.target.getAttribute('data-content');
-                        showContent(contentId);
-                    });
-                });
-
-                // Show default content
-                showContent('home');
-            });
-        </script>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form1 = document.getElementById('form1');
+            const form2 = document.getElementById('form2');
+            const radios = document.getElementsByName('form-switch');
+
+            const showForm = () => {
+                if (radios[0].checked) {
+                    form1.style.display = 'block';
+                    form2.style.display = 'none';
+                } else {
+                    form1.style.display = 'none';
+                    form2.style.display = 'block';
+                }
+            };
+
+            // Set initial form display
+            showForm();
+
+            radios.forEach(radio => {
+                radio.addEventListener('change', showForm);
+            });
+        });
+    </script>
 </body>
 
 </html>
